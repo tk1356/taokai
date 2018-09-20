@@ -336,7 +336,7 @@
             </ul>
         </div>
     </div>
-    <div class="top visible-lg" style="cursor:pointer">
+    <div class="top" style="cursor:pointer">
         <a onclick="pageScroll()"><img src="images/top.png" alt="" /></a>
     </div>
 </div>
@@ -345,6 +345,9 @@
        position:fixed;bottom:91px;right:0;z-index: 210; 
     }
     .top img{width:100px;}
+    @media (max-width:768px){
+        .top{display:none;}
+    }
 </style>
 <script src="js/swiper.min.js"></script>
 
