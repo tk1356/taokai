@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-08-13 14:21:02
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-09-19 14:52:11
+* @Last Modified time: 2018-09-20 09:29:09
 */
 .navbar-default .navbar-nav>li>a{color: #fff;}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{background-color: #ffffff;color: #1988fb;}
@@ -53,4 +53,5 @@
     .case .box .next{right:-20%;}
     .case .box .prev{left:-20%;}
     .footer .dd ul li{margin:18px 0;}
+    .footer .dd i{width:33px;display:inline-block;}
 }
