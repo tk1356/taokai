@@ -13,7 +13,7 @@ function getTop(clsName){
         var bannerHeight = document.documentElement.clientHeight || document.body.clientHeight;
         window.addEventListener('scroll',function(){  
             /*business的触发*/
-            if(getTop('s1')< bannerHeight-200 ){
+            if(getTop('s1')< bannerHeight-100 ){
                 getDom('s1-h3').classList.add('done1');
                 getDom('s1-h4').classList.add('done1');
                 getDom('row1').classList.add('done2');
