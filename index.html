@@ -336,13 +336,21 @@
             </ul>
         </div>
     </div>
-    <div class="top">
-        <a onclick="pageScroll()">返回顶部</a>
+    <div class="top" style="cursor:pointer">
+        <a onclick="pageScroll()"><img src="images/top.png" alt="" /></a>
     </div>
 </div>
-
+<style type="text/css">
+    .top{
+       position:fixed;bottom:91px;right:0;z-index: 210; 
+    }
+    .top img{width:100px;}
+</style>
 <script src="js/swiper.min.js"></script>
+
 <script>
+
+
     var swiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
       centeredSlides: true,
@@ -362,6 +370,27 @@
     });
   </script>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+             
+    //为当前窗口添加滚动条滚动事件（适用于所有可滚动的元素和 window 对象（浏览器窗口））
+    $(window).scroll(function(){
+         //创建一个变量存储当前窗口下移的高度
+        var scroTop = $(window).scrollTop();
+        //判断当前窗口滚动高度
+        //如果大于100，则显示顶部元素，否则隐藏顶部元素
+        if(scroTop>100){
+            $('.top').fadeIn(500);
+        }else{
+            $('.top').fadeOut(500);
+        }
+                
+    //为返回顶部元素添加点击事件
+    
+        });
+    });
+
+</script>
 <script src="js/index.js"></script>
 <script src="js/myname.js"></script>
 </body>
