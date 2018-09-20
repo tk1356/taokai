@@ -1,12 +1,365 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 响应式的导航栏</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--通过快捷方式打开时全屏显示-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--隐藏状态栏-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <!--iPhone会将看起来像电话号码的数字添加电话连接，应当关闭-->
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/myname.css">
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid"> 
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#">主营服务</a></li>
+            <li><a href="#">运营团队</a></li>
+            <li><a href="#">合作案例</a></li>
+            <li><a href="#">公司动态</a></li>
+            <li><a href="#">关于我们</a></li>
+            <!-- 
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Java <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li> 
+            -->
+        </ul>
+    </div>
+    </div>
+</nav>
+<!-- 轮播 -->
+<div class="swiper-container">
+    <div class="swiper-wrapper"  >
+      <div class="swiper-slide" >
+          <img src="images/banner.jpg"  alt="" />
+      </div>
+      <div class="swiper-slide" >
+          <img src="images/banner-1.jpg"  alt="" />
+      </div>
+      <div class="swiper-slide" >
+          <img src="images/banner-2.jpg"  alt="" />
+      </div>
+    </div>
+    <style type="text/css">
+        .swiper-slide{background: none;}
+        @media (max-width:768px){
+            .swiper-container{height:auto!important;}
+        }
+    </style>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<!-- 我们的服务 -->
+<div class="container-fluid service s1">
+    <div class="container service-content">
+        <h3 class="s1-h3 animated1">互联网营销四大难题</h3>
+        <div class="fz s1-h4 animated1">
+            <img src="images/fz.png" alt="" />
+        </div>
+        <div class="it-nt">
+            <div class="col-lg-3 col-md-12 col-xs-12">
+                <ul>
+                    <li class="animated1 row1">
+                        <span>不懂</span>
+                        <h3>不懂互联网营销</h3>
+                        <p>传统企业重生产和渠道，对互联网尚未有系统认知</p>
+                    </li>
+                    <li class="animated1 row3">
+                        <span>缺乏</span>
+                        <h3>缺乏平台资源</h3>
+                        <p>互联网即资源整合，媒体、渠道找不到资源对接人</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-12 col-xs-12 ban">
+                <img src="images/b1.png" alt="" style="max-width:100%;" />
+            </div>
+            <div class="col-lg-3 col-md-12 col-xs-12">
+                <ul class="cc">
+                    <li class="animated1 row2">
+                        <span>没有</span>
+                        <h3>没有专业团队</h3>
+                        <p>策划、文案、设计、运营，人力财力成本高</p>
+                    </li>
+                    <li class="animated1 row4">
+                        <span>找不到</span>
+                        <h3>找不到客户目标人群</h3>
+                        <p>不懂定位和包装，找不到符合产品特性的消费客户</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- 媒体资源 -->
+<div class="container-fluid service s2" style="background:#f6f6f6;">
+    <div class="container service-content">
+        <h3 class="s2-h3 animated1">找小甲虫科技，一键解决所有问题</h3>
+        <div class="fz s2-h4 animated1">
+            <img src="images/fz.png" alt="" />
+        </div>
+        <div class="solution">
+            <div class="col-lg-4 col-md-12 col-xs-12">
+                <ul>
+                    <li class="solu-row1"><img src="images/wz.png" alt="" /></li>
+                    <li class="solu-row4"><img src="images/wz3.png" alt="" /></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 col-xs-12 cc">
+                <ul>
+                    <li class="solu-row3"><img src="images/wz2.png" alt="" /></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 col-xs-12">
+                <ul>
+                    <li class="solu-row2"><img src="images/wz1.png" alt="" /></li>
+                    <li class="solu-row5"><img src="images/wz4.png" alt="" /></li>
+                </ul>
+            </div>
+        </div>
 
-  <img src="images/1.png" alt="" />
+    </div>
+</div>
 
+<div class="container-fluid service s3" style="background:#183145;">
+    <div class="container service-content">
+        <h3 class="s3-h3 animated1" style="color:#fff;">小甲虫可以为您做什么？</h3>
+        <div class="fz s3-h4 animated1">
+            <img src="images/fz.png" alt="" />
+        </div>
+        <div class="dosm">
+            <div class="col-lg-4 col-md-6 col-xs-12 eow1 animated1">
+                <div class="dosm-i">
+                    <img src="images/ser1.png" alt="" />
+                </div>
+                <h3>品牌定位分析</h3>
+                <p>专业调研团队、策划团队，为您定制品牌定位推广策略</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 eow2 animated1">
+                <div class="dosm-i">
+                    <img src="images/ser2.png" alt="" />
+                </div>
+                <h3>平台系统搭建</h3>
+                <p>个性化定制官网、微信公众号、微博、今日头条等内容平台搭建</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 eow3 animated1">
+                <div class="dosm-i">
+                    <img src="images/ser3.png" alt="" />
+                </div>
+                <h3>内容运营</h3>
+                <p>量身定制原创图文资讯，根据粉丝群体定位，输出高质量创意文案</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 eow4 animated1">
+                <div class="dosm-i">
+                    <img src="images/ser4.png" alt="" />
+                </div>
+                <h3>营销活动策划</h3>
+                <p>定期策划粉丝互动活动，活跃粉丝群体，实现粉丝裂变式增长</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 eow5 animated1">
+                <div class="dosm-i">
+                    <img src="images/ser5.png" alt="" />
+                </div>
+                <h3>媒体顾问</h3>
+                <p>线上平台百万级粉丝大v、意见领袖资源，广告渠道、媒体广告位精准定制</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 eow6 animated1">
+                <div class="dosm-i">
+                    <img src="images/ser6.png" alt="" />
+                </div>
+                <h3>商城营销</h3>
+                <p>精心打造个性化商城，提供专业客服及运营团队，实现交易快速增长</p>
+            </div>
+        </div>
+    </div>
+       
+</div>
+<div class="case s4">
+    <div class="case-content">
+        <h3 class="s4-h3 animated1">
+            <img src="images/anli.png" alt="" />
+        </h3>
+        <div class="box">
+
+            <div class="list">
+                <ul>
+                    <li class="p7"><a href="#"><img src="img/1.png" alt="" /></a></li>
+                    <li class="p6"><a href="#"><img src="img/2.png" alt="" /></a></li>
+                    <li class="p5"><a href="#"><img src="img/3.png" alt="" /></a></li>
+                    <li class="p4"><a href="#"><img src="img/44.jpg" alt="" /></a></li>
+                    <li class="p3"><a href="#"><img src="img/55.jpg" alt="" /></a></li>
+                    <li class="p2"><a href="#"><img src="img/66.jpg" alt="" /></a></li>
+                    <li class="p1"><a href="#"><img src="img/77.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+            <a href="javascript:;" class="prev btn"><</a>
+            <a href="javascript:;" class="next btn">></a>
+            <div class="buttons">
+        <a href="javascript:;"><span class="blue"></span></a>
+        <a href="javascript:;"><span></span></a>
+        <a href="javascript:;"><span></span></a>
+        <a href="javascript:;"><span></span></a>
+        <a href="javascript:;"><span></span></a>
+        <a href="javascript:;"><span></span></a>
+        <a href="javascript:;"><span></span></a>
+    </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid news s5">
+    <div class="news-content">
+        <h3  class="s5-h3 animated1">
+            <img src="images/news.png" alt="" />
+        </h3>
+        <div class="news-x">
+            <ul>
+                <li class="col-lg-4 col-md-6 col-xs-12 news1">
+                    <a href="">
+                        <img src="images/news1.png" alt="" />
+                        <h3>小甲虫与苏宁公司签的</h3>
+                    </a>
+                </li>
+                <li class="col-lg-4 col-md-6 col-xs-12 news2">
+                    <a href="">
+                        <img src="images/news1.png" alt="" />
+                        <h3>小甲虫与苏宁公司签的</h3>
+                    </a>
+                </li> 
+                <li class="col-lg-4 col-md-6 col-xs-12 news3">
+                    <a href="">
+                        <img src="images/news1.png" alt="" />
+                        <h3>小甲虫与苏宁公司签的</h3>
+                    </a>
+                </li> 
+                <li class="col-lg-4 col-md-6 col-xs-12 news4">
+                    <a href="">
+                        <img src="images/news1.png" alt="" />
+                        <h3>小甲虫与苏宁公司签的</h3>
+                    </a>
+                </li> 
+                <li class="col-lg-4 col-md-6 col-xs-12 news5">
+                    <a href="">
+                        <img src="images/news1.png" alt="" />
+                        <h3>小甲虫与苏宁公司签的</h3>
+                    </a>
+                </li>
+                <li class="col-lg-4 col-md-6 col-xs-12 news6">
+                    <a class="more" href="">查看更多>></a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 底部 -->
+<div class="footer">
+    <div class="footer-content">
+        <div class="col-lg-6 col-md-6 col-xs-12 cc" style="padding-top:183px;" >
+            <div class="logo-c">
+                <img src="images/logo.png" alt=""/>
+            </div>
+            <div class="dezhi" style="margin:28px 0;">
+                <style type="text/css">
+                    .dezhi ul ,.zning ul{padding-left: 0;}
+                    .dezhi ul > li,.zning ul>li{display:inline-block;
+                        color: #fff;}
+                </style>
+                <ul>
+                    <li>
+                        <img src="images/dezhi_logo.png" alt="" />
+                    </li>
+                    <li style="margin-left:19px;">得知网络
+                        <br>http://dezhie.com/
+                    </li>
+                </ul>
+            </div>
+
+            <div class="zning">
+                <ul>
+                    <li>
+                        <img src="images/zhongning_logo.png" alt="" style="margin-left:-12px;" />
+                    </li>
+                    <li style="margin-left:12px;">众宁电商科技有限公司
+                        <br>http://dezhie.com/
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12 dd" style="background:#183545;color:#fff;padding-top:61px;padding-bottom:61px;">
+            <h4>CONTACT US</h4>
+            <h3>联系我们</h3>
+            <ul>
+                <li><i><img src="images/address.png" alt="" /></i>湖北省武汉市洪山区鲁磨路地大珠宝大楼</li>
+                <li><i><img src="images/email.png" alt="" /></i>12486635666@qq.com</li>
+                <li><i><img src="images/tel.png" alt="" /></i>02785506273</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop:true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/myname.js"></script>
 </body>
 </html>
