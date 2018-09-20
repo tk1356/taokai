@@ -2,18 +2,17 @@
 * @Author: Marte
 * @Date:   2018-08-13 14:21:02
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-09-20 11:14:44
+* @Last Modified time: 2018-09-20 18:14:21
 */
-.navbar-default .navbar-nav>li>a{color: #fff;}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{background-color: #f84e4e;color: #fff;}
+.navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav>li>a:focus{color: #fff;}
+.navbar-nav .active a{background-color: #f84e4e!important;color: #fff!important;}
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>li>a:hover{background-color: #f84e4e;color: #ffffff;}
 @media (min-width: 768px){
     body{font-size: 12px;}
     .navbar-default{background: #183145;width: 100%;padding:0 17%;margin: 0 auto;border:none;}
-    .navbar-nav .active a{background-color:#f84e4e!important;color:#fff!important;}
     .navbar-nav {float: right; margin: 0;}
     .navbar-brand{height: auto;overflow: hidden;}
     .navbar-nav>li>a{line-height: 65px;font-size: 1.5em;font-size: 1vmax;}
-
     .footer{width:100%;height:auto;overflow: hidden;background:#292825;background:url(../images/footer_bj.jpg) no-repeat;}
     .footer-content {width: 70%;height: auto;overflow: hidden;margin: 0 auto;}
     .footer-content .cc ul li{list-style: none;color:#fff;}
@@ -22,6 +21,7 @@
     .footer-content .dd ul{padding-left:0;}
     .footer-content .dd h4{font-size: 30px;margin-left: 43px;}
     .footer-content .dd h3{font-size: 30px;margin-left: 43px;}
+    .ximg{width:45%;}
 }
 @media (max-width:768px){
     .navbar-brand{height: auto;overflow: hidden;}
@@ -44,7 +44,7 @@
     .it-nt h3,.it-nt ul li,.it-nt .cc li,.it-nt .cc h3{text-align: center;}
     .it-nt .ban{padding: 20px 0;}
     .news-content h3 img,.case-content h3 img{width: 100%;}
-    .service h3{font-size: 30px;}
+    .service h3{font-size: 20px;}
     .it-nt{padding-top:0;}
     .swiper-container img{width:100%;height:auto;}
     .case, .news{padding-top:30px;}
@@ -53,5 +53,13 @@
     .case .box .next{right:-20%;}
     .case .box .prev{left:-20%;}
     .footer .dd ul li{margin:18px 0;}
-    .footer .dd i{width:33px;display:inline-block;}
+    .footer .dd i {width: 33px;display: inline-block;}
+    .solution ul li{width: 49%;margin:0;display:inline-block;}
+    .solution{padding:0;}
+    .solution .cc{text-align: center;}
+    .news-content{width:100%;}
+    .case{margin-bottom: 0;}
+    .news-x{padding:0;}
+    .news-x h3{font-size: 12px;}
+    .more{font-size: 16px;padding:35.5% 0;}
 }
