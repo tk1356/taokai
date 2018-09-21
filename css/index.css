@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-08-13 14:20:34
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-09-20 18:31:37
+* @Last Modified time: 2018-09-21 09:23:22
 */
 *{
       padding: 0;margin: 0;
@@ -65,7 +65,7 @@ li{list-style: none;}
 .news-x img{width:100%;}
 .news-x ul li{margin: 10px 0;}
 .news-x h3{margin:0;line-height: 40px;background:#183145;color:#fff;font-size: 16px;}
-.more{display: block;width: 100%;height: 100%;background-color: red;color: #fff;text-align: center;font-size: 22px;padding: 27.5% 0;}
+.more{display: block;width: 100%;height: 100%;background-color: red;color: #fff;text-align: center;font-size: 22px;padding: 30.5% 0;}
 .more:hover{color: #ffffff;}
 .box{margin-top: 80px;width: 100%;height: 340px;position: relative;}
 .case .box .list{width: 1200px;height: 300px;overflow: hidden;position: absolute;left: 50%;margin-left: -600px;}
