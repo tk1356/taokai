@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-08-13 14:20:34
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-09-21 09:23:22
+* @Last Modified time: 2018-09-21 09:33:02
 */
 *{
       padding: 0;margin: 0;
@@ -59,6 +59,7 @@ li{list-style: none;}
 .dosm > div:hover{background:#f84e4e;}
 .dosm > div{padding: 2% 3%;text-align: center;}
 .case,.news{width:100%;height:auto;overflow: hidden;padding-top:170px;margin-bottom:90px;}
+.news{padding-top:0;}
 .case-content,.news-content{width:70%;height:auto;overflow: hidden;margin:0 auto;}
 .case-content h3,.news-content h3{text-align: center;}
 .news-x{padding-top:82px;}
