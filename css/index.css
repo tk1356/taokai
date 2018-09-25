@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-08-13 14:20:34
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-09-21 09:33:02
+* @Last Modified time: 2018-09-25 10:39:01
 */
 *{
       padding: 0;margin: 0;
@@ -132,3 +132,39 @@ li{list-style: none;}
 }
 .case .box .blue{background: blue;}
 .sy-s{width:106px;text-align: center;}
+.swiper-slide{background: none;}
+.dezhi ul ,.zning ul{padding-left: 0;}
+.dezhi ul > li,.zning ul>li{display:inline-block;
+                        color: #fff;}
+.top{position:fixed;bottom:91px;right:0;z-index: 210; }
+.top img{width:100px;}
+
+@media (min-width: 768px){
+      .ximg{width:45%;}
+}
+
+@media (max-width:768px){
+    .service .fz{display: none;}
+    .solution .cc{margin-top:0 !important;}
+    .it-nt h3,.it-nt ul li,.it-nt .cc li,.it-nt .cc h3{text-align: center;}
+    .it-nt .ban{padding: 20px 0;}
+    .news-content h3 img,.case-content h3 img{width: 100%;}
+    .service h3{font-size: 20px;}
+    .it-nt{padding-top:0;}
+    .swiper-container img{width:100%;height:auto;}
+    .case, .news{padding-top:30px;}
+    .case-content{overflow:unset;}
+    .case .box .btn{z-index: 99;background:rgba(34, 35, 34, 0.5);}
+    .case .box .next{right:-20%;}
+    .case .box .prev{left:-20%;}
+    .solution ul li{width: 49%;margin:0;display:inline-block;}
+    .solution{padding:0;}
+    .solution .cc{text-align: center;}
+    .news-content{width:100%;}
+    .case{margin-bottom: 0;}
+    .news-x{padding:0;}
+    .news-x h3{font-size: 12px;}
+    .more{font-size: 16px;padding:35.5% 0;}
+    .swiper-container{height:auto!important;}
+    .top{display:none!important;}
+}
