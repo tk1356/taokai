@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-08-13 14:21:02
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-09-25 10:40:15
+* @Last Modified time: 2018-09-26 10:40:12
 */
 .navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav>li>a:focus{color: #fff;}
 .navbar-nav .active a{background-color: #f84e4e!important;color: #fff!important;}
@@ -41,4 +41,7 @@
     .footer .dd ul li{margin:18px 0;}
     .footer .dd i {width: 33px;display: inline-block;}
     .footer-content .cc{padding-top:10%!important;padding-bottom: 10%!important;}
+    .footer .yc{display:none!important;}
+    .footer .logo-c,.footer .dezhi,.footer .zning{text-align: center;}
+
 }
