@@ -177,21 +177,15 @@
     </nav>
 </header>
 
-<div class="bg-cover about-cover" style="background-image: url('/medias/cover.jpg')">
+
+
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+            <div class="col s12 m12 l12">
                 <div class="brand">
-                    <div class="title center-align">
-                    
-                        个人博客
-                    
-                    </div>
-
-                    <div class="description center-align">
-                    
-                        博客
-                    
+                    <div class="description center-align post-title">
+                        生命如此短暂，我只想和你
                     </div>
                 </div>
             </div>
@@ -199,178 +193,219 @@
     </div>
 </div>
 
-<script>
-// Dynamically switch banner pictures every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
-</script>
-
 <main class="content">
 
-    
-    <div class="container notice">
+    <!-- 文章内容详情 -->
+    <div id="artDetail" class="container">
         <div class="card">
-            <div class="card-content">
-                <i class="fa fa-volume-up fa-lg fa-fw text-color"></i>现实的抽象是语言，语言的抽象是程序1，程序的抽象是数理逻辑，数理逻辑的抽象是超越认知的真理。
+            <div class="card-content article-info">
+                
+                <div class="article-tag">
+                    
+                    <a href="/tags/文章/" target="_blank"><span class="chip bg-color">文章</span></a>
+                    
+                </div>
+                
+                <div class="post-info">
+                    
+                    <span class="post-cate">
+                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/美文/" class="post-category" target="_blank">
+                        美文
+                        </a>
+                        
+                    </span>
+                    
+
+                    <span class="post-date">
+                        <i class="fa fa-clock-o fa-fw"></i>2018-10-09
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <div class="card-content article-card-content">
+                <div id="articleContent">
+                    <p>生命如此短暂，此生只想望着你。</p>
+<p>或许我的心情是苦涩又愉悦</p>
+<p>想走近你，想聆听你</p>
+<p>聊一聊那份默默的情怀</p>
+<p>生命如此短暂，此生只想想着你</p>
+<p>或许我的心情是踯躅又甜蜜</p>
+<p>想拥抱你，想品读你</p>
+<p>聊一聊那一次次月光下的徘徊</p>
+<p>生命如此短暂，此生只想守着你</p>
+<p>或许我的心情是平静而幸福</p>
+<p>想注视你，想成为你</p>
+<p>聊一聊那些生活味道</p>
+<p>我一直这样想着，我不想得到什么</p>
+<p>清晨的风，山间的月</p>
+<p>都轻抚过我的梦</p>
+
+                </div>
+                <hr/>
+
+                <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+                <div class="reprint">
+                    <p>
+                        <span class="reprint-tip">转载请注明: </span>
+                        <a href="http://yoursite.com" class="b-link-green">我的第一个博客</a>
+                        <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                        <a href="/2018/10/09/生命如此短暂，我只想和你/" class="b-link-green">生命如此短暂，我只想和你</a>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    
 
-    
+        
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
 
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/10/09/当三毛遇见了张爱玲/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="当三毛遇见了张爱玲">
-                            
-                            <span class="card-title">当三毛遇见了张爱玲</span>
-                        </div>
-                    </a>
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
 
-                    <div class="card-content article-content">
-                        <div class="summary">注定错过是凄美的遇见
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '2e56c9f3a90b6e8fb4f0',
+        clientSecret: 'ba491ea79bbff85ec80b88db79e210b474a9cbc8',
+        repo: 'blinkfox.github.io',
+        owner: 'blinkfox',
+        admin: ["blinkfox"],
+        id: '2018-10-09T16-33-10',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+        
+
+        
+
+        
+
+        
+
+<article id="articles" class="container prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">上一篇</div>
+            <div class="card">
+                <a href="/2018/10/09/当三毛遇见了张爱玲/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="当三毛遇见了张爱玲">
+                        
+                        <span class="card-title">当三毛遇见了张爱玲</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">注定错过是凄美的遇见
 台湾的她，有着放荡不羁的灵魂，
 上海的她，有一颗清新孤傲的心，
 读了《撒哈拉的故事》看见了一个
-孤独的灵魂在寻找自由。</div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/美文/" class="post-category" target="_blank">
+孤独的灵魂在寻找自由。
+读了《半生缘》看见了一个冷漠看待
+繁华荣辱的孤独者。
+她的爱情如广阔的沙漠，
+平淡中显示着不凡。
+</div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-09
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/美文/" class="post-category" target="_blank">
                                     美文
                                 </a>
-                                
-                                
-                            </span>
-                        </div>
+                            
+                            
+                        </span>
                     </div>
-
+                </div>
+                
+                <div class="card-action article-tags">
                     
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/文章/" target="_blank">
-                            <span class="chip bg-color">文章</span>
-                        </a>
-                        
-                    </div>
+                    <a href="/tags/文章/" target="_blank">
+                        <span class="chip bg-color">文章</span>
+                    </a>
                     
                 </div>
+                
             </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/10/09/生命如此短暂，我只想和你/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="生命如此短暂，我只想和你">
-                            
-                            <span class="card-title">生命如此短暂，我只想和你</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary">生命如此短暂，此生只想望着你。
-或许我的心情是苦涩又愉悦
-想走近你，想聆听你
-聊一聊那份默默的情怀
-生命如此短暂，此生只想想着你
-或许我的心</div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/美文/" class="post-category" target="_blank">
-                                    美文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">下一篇</div>
+            <div class="card">
+                <a href="/2018/10/09/军恋/">
+                    <div class="card-image">
                         
-                        <a href="/tags/文章/" target="_blank">
-                            <span class="chip bg-color">文章</span>
-                        </a>
                         
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="军恋||熬过异地  就是一生">
+                        
+                        <span class="card-title">军恋||熬过异地  就是一生</span>
                     </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/10/09/军恋/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="军恋||熬过异地  就是一生">
-                            
-                            <span class="card-title">军恋||熬过异地  就是一生</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary">
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">
 最近网络上被一段文字刷屏了，看见这段文字时感觉你和这段文字重合了。
 如果你不是军人
 你不必做出这些牺牲
 你不必迎着烈日挺直腰板
-就像生来便</div>
-                        <div class="publish-info">
+就像生来便是笔直的钢尺
+你不必扎根在这里
+忍受雪山、海岛的孤寂
+你不必错过彼此的陪伴
+也不必缺席父母的老去**</div>
+                    <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-09
                             </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/美文/" class="post-category" target="_blank">
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/美文/" class="post-category" target="_blank">
                                     美文
                                 </a>
-                                
-                                
-                            </span>
-                        </div>
+                            
+                            
+                        </span>
                     </div>
-
+                </div>
+                
+                <div class="card-action article-tags">
                     
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/文章/" target="_blank">
-                            <span class="chip bg-color">文章</span>
-                        </a>
-                        
-                    </div>
+                    <a href="/tags/文章/" target="_blank">
+                        <span class="chip bg-color">文章</span>
+                    </a>
                     
                 </div>
+                
             </div>
-            
         </div>
-    </article>
-
+        
+    </div>
+</article>
+    </div>
 </main>
-
-
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
