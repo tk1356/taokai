@@ -177,21 +177,15 @@
     </nav>
 </header>
 
-<div class="bg-cover about-cover" style="background-image: url('/medias/cover.jpg')">
+
+
+<div class="bg-cover post-cover" style="background-image: url('https://www.taokai.site/img/gj.png')">
     <div class="container">
         <div class="row">
-            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+            <div class="col s12 m12 l12">
                 <div class="brand">
-                    <div class="title center-align">
-                    
-                        个人博客
-                    
-                    </div>
-
-                    <div class="description center-align">
-                    
-                        博客
-                    
+                    <div class="description center-align post-title">
+                        在线工具
                     </div>
                 </div>
             </div>
@@ -199,112 +193,195 @@
     </div>
 </div>
 
-<script>
-// Dynamically switch banner pictures every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
-</script>
-
 <main class="content">
 
-    
+    <!-- 文章内容详情 -->
+    <div id="artDetail" class="container">
+        <div class="card">
+            <div class="card-content article-info">
+                
+                <div class="article-tag">
+                    
+                    <a href="/tags/工具/" target="_blank"><span class="chip bg-color">工具</span></a>
+                    
+                </div>
+                
+                <div class="post-info">
+                    
+                    <span class="post-cate">
+                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/资源/" class="post-category" target="_blank">
+                        资源
+                        </a>
+                        
+                    </span>
+                    
 
-<div id="category-cloud" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">文章分类</div>
-            <div class="tag-chips">
-                
-                
-                
-                <a href="/categories/案例/" title="案例: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F9EBEA;">案例
-                        <span class="tag-length">1</span>
+                    <span class="post-date">
+                        <i class="fa fa-clock-o fa-fw"></i>2018-10-10
                     </span>
+                </div>
+            </div>
+            <hr>
+            <div class="card-content article-card-content">
+                <div id="articleContent">
+                    <p><img src="https://www.taokai.site/img/gj.png" alt=""></p>
+<p>html 转 markdown,在线运行代码，php工具，css工具，js工具等等实用的工具<br><a href="https://tool.lu/" title="在线工具" target="_blank" rel="noopener">https://tool.lu/</a></p>
+
+                </div>
+                <hr/>
+
+                <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+                <div class="reprint">
+                    <p>
+                        <span class="reprint-tip">转载请注明: </span>
+                        <a href="http://yoursite.com" class="b-link-green">我的第一个博客</a>
+                        <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                        <a href="/2018/10/10/在线工具/" class="b-link-green">在线工具</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '2e56c9f3a90b6e8fb4f0',
+        clientSecret: 'ba491ea79bbff85ec80b88db79e210b474a9cbc8',
+        repo: 'blinkfox.github.io',
+        owner: 'blinkfox',
+        admin: ["blinkfox"],
+        id: '2018-10-10T15-20-59',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+        
+
+        
+
+        
+
+        
+
+<article id="articles" class="container prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">上一篇</div>
+            <div class="card">
+                <a href="/2018/10/10/五划合一官方网站/">
+                    <div class="card-image">
+                        
+                        <img src="https://www.taokai.site/img/whhy.png" class="responsive-img" alt="五划合一官方网站">
+                        
+                        <span class="card-title">五划合一官方网站</span>
+                    </div>
                 </a>
+                <div class="card-content article-content">
+                    <div class="summary">武汉五划合一咨询顾问有限公司创立于2011年，隶属于五划合一集团。五划合一集团全国布局武汉运营总部，上海规划总部、深圳建筑总部，旗下拥有武汉五划合一咨询顾问有限公司、浙江五划合一技术有限公司、上海五新城市规划设计有限公司、武汉五划合一规划设</div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-10
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/案例/" class="post-category" target="_blank">
+                                    案例
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
                 
-                
-                <a href="/categories/美文/" title="美文: 3">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F5EEF8;">美文
-                        <span class="tag-length">3</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/资源/" title="资源: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">资源
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/网站/" target="_blank">
+                        <span class="chip bg-color">网站</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
-    </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">下一篇</div>
+            <div class="card">
+                <a href="/2018/10/09/当三毛遇见了张爱玲/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="当三毛遇见了张爱玲">
+                        
+                        <span class="card-title">当三毛遇见了张爱玲</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">注定错过是凄美的遇见
+台湾的她，有着放荡不羁的灵魂，
+上海的她，有一颗清新孤傲的心，
+读了《撒哈拉的故事》看见了一个
+孤独的灵魂在寻找自由。
+读了《半生缘》看见了一个冷漠看待
+繁华荣辱的孤独者。
+她的爱情如广阔的沙漠，
+平淡中显示着不凡。
 </div>
-
-    
-    <style type="text/css">
-    #category-radar {
-        width: 100%;
-        height: 360px;
-    }
-</style>
-
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="category-radar" class="card-content"></div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-10-09
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/美文/" class="post-category" target="_blank">
+                                    美文
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/文章/" target="_blank">
+                        <span class="chip bg-color">文章</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
     </div>
-</div>
-
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let radarChart = echarts.init(document.getElementById('category-radar'));
-
-    
-
-    let option = {
-        title: {
-            left: 'center',
-            text: '文章分类雷达图',
-            textStyle: {
-                fontWeight: 500,
-                fontSize: 22
-            }
-        },
-        tooltip: {},
-        radar: {
-            name: {
-                textStyle: {
-                    color: '#3C4858'
-                }
-            },
-            indicator: [{"name":"案例","max":4},{"name":"美文","max":4},{"name":"资源","max":4}],
-            nameGap: 5,
-            center: ['50%','55%'],
-            radius: '66%'
-        },
-        series: [{
-            type: 'radar',
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data : [
-                {
-                    value : [1,3,1],
-                    name : '文章分类数量'
-                }
-            ]
-        }]
-    };
-
-    radarChart.setOption(option);
-</script>
-    
-
+</article>
+    </div>
 </main>
 
 <footer class="page-footer bg-color">
